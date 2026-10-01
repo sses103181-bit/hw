@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<body>
+<meta charset="UTF-8">
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yArray = [55, 49, 44, 24, 15];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<img src="2.jpg" alt="Paris" width="300" height="300">
+<iframe width="1424" height="801" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Hello World</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="https://87mark0109.github.io/yifanxiaogg/">同學1</a>
+    <a href="https://renee970806-ai.github.io/zona/">同學2</a>
+    <a href="https://zx921448.github.io/my-website/">同學3</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">穢 copyright w3schools.com</div>
+
+</body>
+</html>
